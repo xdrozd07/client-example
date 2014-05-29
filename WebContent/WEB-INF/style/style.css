@@ -1,0 +1,253 @@
+@CHARSET "UTF-8";
+* {
+	padding: 0 0;
+	margin: 0 0;
+}
+html {
+	font: 16px/1.5 "Trebuchet MS", "Geneva CE", lucida, sans-serif;
+	border: 0;
+	margin: 0 0;
+	padding: 0 0 ;
+}
+body {
+	max-width: 990px;
+	margin: 0 auto;
+	background: url(./img/bg.png) left top repeat-x white;
+	color: #333;
+}
+a, a:link, a:visited {
+	color: #687cd3;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: red;
+}
+fieldset {
+	padding: 1.5em;
+	border: 1px solid #7A7772;
+	margin: 2em 0;
+}
+fieldset legend{
+	padding: 0.1em 0.5em;
+	border: 1px solid #7A7772;
+}
+form input{
+	padding: 0.1em 0.3em;
+	margin: 0.2em 0;
+}
+form label {
+	padding-right: 0.2em;
+}
+form label.error {
+	display: block;
+	color: red;
+	font-style: italic;
+	font-size: 80%;
+}
+form table td {
+	vertical-align: top;
+}
+form table th{
+	text-align: left;
+	font-weight: normal;
+}
+form table tr{
+	line-height: 2;
+}
+ul {
+	margin: 5px 0 5px 10px;
+}
+
+ul li {
+	margin: 2px 0 2px 1.5em;
+}
+
+h2 {
+	font-size: 120%;
+	color: #3484D2;
+}
+h3 {
+	font-size: 110%;
+	margin: 25px 0 2px 0;
+}
+h4 {
+	font-size: 100%;
+	margin: 15px 0 2px 0;
+}
+#head {
+	margin: 0 0 10px 0;
+	height: 130px;
+	position: relative;
+	
+}
+#headline {
+	padding: 30px 0 0 5px;
+	margin: 0 0;
+	font: 1.9em/1.5 sans-serif;
+	padding-top: .5em;
+	color: #7A7772;
+	text-shadow: 1px 1px 0 white;
+}
+#subtitle {
+	padding: 0px 0 0 40px;
+	font: 1.2em/1.5 sans-serif;
+	margin: 0 0 0em 0;
+	padding-top: .5em;
+	color: #7A7772;
+	text-shadow: 1px 1px 0 white;
+}
+#user {
+	position: absolute;
+	top: 20px;
+	right: 0;
+	text-align: right;
+}
+#user span {
+	background: url(./img/user.png) no-repeat left 50%; 
+	line-height: 24px;
+	padding-left: 30px;
+	display: inline-block;
+}
+#menu{
+	border-bottom: solid #7A7772 1px;
+}
+#submenu {
+	font-size: 80%;
+}
+#submenu a.save{
+	color: red;
+	font-weight: bold;
+	font-size: 100%;
+	background: #f4ebdb;
+	border: 1px solid #f4ebdb;
+}
+#submenu a.save:hover, #submenu a.save:active {
+	color: #687cd3;
+	border: 1px solid #687cd3;
+}
+#menu li, #submenu li{
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 0;
+	padding: 0 0;
+}
+#menu li a, #menu li a:link, #menu li a:visited, #submenu li a, #submenu li a:link, #submenu li a:visited {
+	display: block;
+	padding:  0.1em 1em;
+}
+#menu li a:hover, #menu li a:active, #submenu li a:hover, #submenu li a:active {
+	background: #f4ebdb;
+}
+#content {
+	min-height: 450px;
+}
+table.list{
+	border-collapse: collapse;
+	border: 2px solid #7A7772;
+	width: 100%;
+	margin: 2em 0;
+}
+table.list tr td, table.list tr th {
+	border: 1px solid #7A7772;
+	padding: 2px 5px;
+	vertical-align: top;
+}
+table.list tr:hover td{
+	background: rgb(244,235, 219);
+}
+td.middle{
+	text-align: center;	
+}
+a.edit, a.view, a.delete{
+	display: inline-block;
+	height:20px;
+	background: url(img/edit.png) no-repeat;
+	width: 15px;
+}
+a.edit span, a.view  span, a.delete span{
+	display: none;
+}
+a.view{
+	width: 20px;
+	background: url(img/lupa.png) no-repeat;
+}
+a.delete{
+	background: url(img/delete.png) no-repeat;
+	width: 20px;
+}
+a.add {
+	background: url(./img/add.png) no-repeat left;
+	padding: 0 0px 0 18px;
+	line-height: 22px;
+}
+#footer{
+	font-size: 75%;
+	border-top: 0px solid ;
+	background: #f4ebdb;
+	padding: 0.2em 1em;
+	text-align: center;
+}
+.message-error {
+	border: 1px solid red;
+	background: #ffcccc;
+	color: red;
+	border-radius: 4px;
+	padding: 0.5em 0.5em;
+	margin: 1em 0;
+	font-weight: bold;
+	border-radius: 4px;
+	font-size: 80%;
+}
+.message-warning {
+	border: 1px solid #ff9000;
+	background: #ffdfbf;
+	color: #ff9000;
+	border-radius: 5px;
+	padding: 15px 15px;
+	margin: 1em 0;
+}
+.message-warning h3 {
+	margin: 0.3em 0;
+}
+
+.note {
+	font-size: 70%;
+	color: gray;
+	font-style: italic;
+}
+div.hint {
+	font-size: 90%;	
+	margin: 10px 10px 10px 45px;
+	padding: 10px 10px;
+	border: 1px solid rgb(100,100,100);
+	color: rgb(100,100,100);
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: rgb(240, 240, 240);
+	float: right;
+	max-width: 240px;
+	line-height: 1.5;
+}
+div.hint p{
+	margin: 0 0px 10px 0;
+	
+}
+
+
+table.view {
+	border-collapse: collapse;
+	border: 2px solid #7A7772;
+	width: 100%;
+	margin: 1em 0;
+}
+
+table.view th, table.view td {
+	text-align: left;
+	border: 1px solid #7A7772;
+	padding: 2px 5px;
+	vertical-align: top;
+}
+table.view td.middle, table.view th.middle {
+	text-align: center;
+}
+
